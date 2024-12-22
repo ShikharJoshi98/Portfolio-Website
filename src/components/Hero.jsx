@@ -1,28 +1,18 @@
 import React from 'react'
-import { HERO_CONTENT } from "../constants/index"
-import { motion } from "framer-motion"
 
-const containerVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.5,       
-    }
-  }
-} 
+import { Button } from './ui/button'
+
+
 
 const Hero = () => {
   return (
     <div className='pb-4 '>
       <div className='w-full'>
-        <div className='flex flex-col items-center mt-4 '>
-          <h2 className='pb-2 text-4xl tracking-tighter lg:text-7xl'>Shikhar Joshi</h2>
-          <span className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl
+        <div initial="hidden" animate="visible"  className='flex flex-col items-center mt-4 '>
+          <h2  className='pb-4 text-white text-4xl tracking-tighter lg:text-7xl'>Shikhar Joshi</h2>
+          <span  className='bg-gradient-to-r from-stone-100 to-stone-400 bg-clip-text text-3xl
           tracking-tight text-transparent pb-7'>Full Stack Developer</span>
-          <a href="/resume.pdf" target='blank' rel='noopener noreferrer' download className='bg-white rounded-full p-4 text-sm text-stone-800 mb-10'>Download Resume</a>
+          <Button className=' mb-8 md:mb-0 w-full sm:w-fit border-t-2 rounded-full border-none bg-[#3b3b3b] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500'><a href="#" download className='bg-clip-text hover:text-black ' >Download Resume</a></Button>
          </div>
       </div>  
     </div>

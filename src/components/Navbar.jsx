@@ -6,16 +6,12 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/t
 
 const Navbar = () => {
   return (
-      <nav className='flex items-center justify-between py-2'>
-          <div className='flex flwx-shrink-0 items-center'>
-              <a href="/" aria-label='Home'>
-                  <img src="src/assets/raviKumarLogo.webp" alt="Logo" width={50} height={33} className='mx-2' />
-              </a>
-          </div>
-          <div className='m-8 flex items-center justify-center gap-8 text-2xl'>
+      
+          
+          <div className='m-10 flex items-center justify-center gap-8 text-2xl'>
           <TooltipProvider>
   <Tooltip>
-    <TooltipTrigger> <a href="https://www.linkedin.com/in/your-linked-profile"
+    <TooltipTrigger> <a href="https://www.linkedin.com/in/shikhar-joshi11/"
                   target='_blank'
                   rel='noopener noreferrer'
                   aria-label='LinkedIn'
@@ -31,7 +27,7 @@ const Navbar = () => {
 
 <TooltipProvider>
   <Tooltip>
-    <TooltipTrigger> <a href="https://www.github.com/in/your-github-profile"
+    <TooltipTrigger> <a href="https://github.com/ShikharJoshi98"
                   target='_blank'
                   rel='noopener noreferrer'
                   aria-label='Github'
@@ -46,7 +42,7 @@ const Navbar = () => {
 </TooltipProvider>
 <TooltipProvider>
   <Tooltip>
-    <TooltipTrigger> <a href="https://www.Instagram.com/in/"
+    <TooltipTrigger> <a href="https://www.instagram.com/shikharjoshi11/"
                   target='_blank'
                   rel='noopener noreferrer'
                   aria-label='LinkedIn'
@@ -59,24 +55,9 @@ const Navbar = () => {
     </TooltipContent>
   </Tooltip>
 </TooltipProvider>
-<TooltipProvider>
-  <Tooltip>
-    <TooltipTrigger> <a href="#"
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='Email'
-                  ><MdOutlineMailOutline/></a>
-              </TooltipTrigger>
-    <TooltipContent>
-               Mail me     
-                  
-              
-    </TooltipContent>
-  </Tooltip>
-</TooltipProvider>
-              
-          </div>
-    </nav>
+
+      </div>        
+   
   )
 }
 

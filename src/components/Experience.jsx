@@ -25,12 +25,13 @@ const Experience = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
                     transition={{ duration: 1 }}
-                    className='w-full md:pl-24 md:pl-24 max-w-2xl lg:w-3/4'>
+                    className='w-full  md:pl-24 max-w-2xl lg:w-3/4'>
                     <h3 className='mb-2 font-semibold'>
                         {experience.role} -{' '}
                         <span className='text-sm text-stone-500'>{experience.company}</span>
                     </h3>
                     <p className='mb-4 text-stone-400 '>{experience.description}</p>
+                    <div className='flex flex-wrap  gap-1'>
                     {experience.technologies.map((tech, index) => (
                         <span
                             key={index}
@@ -38,6 +39,7 @@ const Experience = () => {
                             {tech}
                         </span>
                     ))}
+                    </div>
                 </motion.div>
             </div>
         ))}

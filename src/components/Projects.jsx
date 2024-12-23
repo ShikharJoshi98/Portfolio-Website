@@ -33,13 +33,15 @@ const Projects = () => {
                     className="w-full max-w-xs sm:max-w-md lg:max-w-lg">
                     <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
                     <p className="mb-4 text-stone-400">{project.description}</p>
-                    {project.technologies.map((tech, index) => (
-                        <span
-                            key={index}
-                            className="mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300">
-                            {tech}
-                        </span>
-                    ))}
+                    <div className="flex flex-wrap  gap-2">
+                        {project.technologies.map((tech, index) => (
+                            <span
+                                key={index}
+                                className="rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300 whitespace-nowrap">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
                 </motion.div>
             </div>
         ))}

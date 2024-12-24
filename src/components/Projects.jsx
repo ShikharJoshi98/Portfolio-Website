@@ -12,9 +12,10 @@ const Projects = () => {
         Projects
     </motion.h2>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-4">
-        {PROJECTS.map((project, idx) => (
-            <div key={idx} className="mb-8 flex flex-wrap justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mx-4 ">
+              {PROJECTS.map((project, idx) => (
+                  <a href={project.link } target='_blank'>
+            <div key={idx} className="mb-8 flex flex-wrap justify-center ">
                 <motion.div
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
@@ -30,7 +31,7 @@ const Projects = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1 }}
-                    className="w-full max-w-xs sm:max-w-md lg:max-w-lg">
+                    className="w-full max-w-xs sm:max-w-md lg:max-w-lg ">
                     <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
                     <p className="mb-4 text-stone-400">{project.description}</p>
                     <div className="flex flex-wrap  gap-2">
@@ -43,7 +44,8 @@ const Projects = () => {
                         ))}
                     </div>
                 </motion.div>
-            </div>
+                      </div>
+                      </a>
         ))}
     </div>
 </div>

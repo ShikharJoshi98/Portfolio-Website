@@ -18,6 +18,7 @@ export const PROJECTS = [
   {
     title: "TravelGuide.AI",
     image: project1,
+    link:"https://ai-travel-guide-nine.vercel.app/",
     description:
       "A personal trip planner and travel curator, creating custom Itineraries tailored to your interests and budget.",
     technologies: ["React", "Firebase", "Tailwind CSS", "Gemini AI"],
@@ -25,18 +26,21 @@ export const PROJECTS = [
   {
     title: "Care Pulse",
     image: project2,
+    link:"https://patient-managment.vercel.app/",
     description:"A Healthcare Patient Managment System application enabling patients to register, book and manage doctor appointments.",
     technologies: ["NextJs", "Appwrite", "Tailwind CSS", "Twilio"],
   },
   {
     title: "Trading Platform Algorithm",
     image: project4,
+    link:"https://github.com/ShikharJoshi98/Trading-Platform-Algorithm",
     description:"A robust order book system to handle and process high-frequency trading orders efficiently.",
     technologies: ["Express", "Typescript"],
   },
   {
     title: "File Zipper",
     image: project3,
+    link:"https://file-zipper-project.vercel.app/",
     description:
       "A File compression tool implemented using Huffman coding",
     technologies: ["HTML", "CSS", "Javascript"],
@@ -46,5 +50,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",
   phoneNo: "+919560718250 ",
-  email: "me@example.com",
+  email: "shikharjoshi89@gmail.com",
 };

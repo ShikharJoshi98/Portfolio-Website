@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Button } from './ui/button'
-import resume from '../../public/Shikhar_resume.pdf'
+import resume from '/Shikhar Joshi Resume.pdf'
 
 const Hero = () => {
   return (
